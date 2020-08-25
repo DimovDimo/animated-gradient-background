@@ -4,28 +4,9 @@
 }());
 
 function gradientChange() {
-    let container = getContainerElement();
-    animationSecondsGradient(container);
-    getGradientColors()
-}
-
-gradientChange();
-
-function getContainerElement() {
-    return document.getElementById("container");
-}
-
-function animationSecondsGradient(body) {
+    let container = document.getElementById("container");
     let animationSeconds = document.getElementById("animation-seconds").value;
     container.style.setProperty("animation", `gradient ${animationSeconds}s infinite`);
 }
 
-function getGradientColors() {
-    let gradientColors = [
-        document.getElementById("gradient-color-1").value, 
-        document.getElementById("gradient-color-2").value,
-        document.getElementById("gradient-color-2").value
-    ];
-    
-    return gradientColors;
-}
+gradientChange();
