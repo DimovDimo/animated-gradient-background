@@ -12,6 +12,15 @@ h1 {
 	font-size: 40px;
 }
 
+form {
+	margin: 17px;
+	font-size: 30px;
+}
+
+input {
+	width: 40px;
+}
+
 @keyframes gradient {
 	0% { background-position: 0%; }
 	50% { background-position: 100%; }
